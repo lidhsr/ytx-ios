@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uTY-pz-hGp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KJ8-km-hg2">
+            <objects>
+                <tabBarController id="uTY-pz-hGp" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kFW-Fe-2my">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ppO-0y-uQP" kind="relationship" relationship="viewControllers" id="xAk-H4-CLa"/>
+                        <segue destination="auy-xx-NQE" kind="relationship" relationship="viewControllers" id="DUF-T4-Urr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2OE-Os-LAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-728" y="206"/>
+        </scene>
+        <!--我-->
+        <scene sceneID="qfa-am-J4X">
+            <objects>
+                <navigationController id="auy-xx-NQE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" image="my_bar" id="KHY-Gs-nC9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p0B-c6-HZt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2jA-D2-L6L" kind="relationship" relationship="rootViewController" id="vck-Uk-Toh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GzY-X1-pgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1086" y="1110"/>
+        </scene>
+        <!--My Order View Controller-->
+        <scene sceneID="g6v-A9-oHc">
+            <objects>
+                <viewController id="2jA-D2-L6L" customClass="MyOrderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eEq-17-BwJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1W2-2D-lhc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JlI-0T-EG4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="byU-cB-tbM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRf-oO-ze3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1044" y="1831"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="oPn-Gb-w7O">
+            <objects>
+                <navigationController id="ppO-0y-uQP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="购物车" image="shopping_bar" selectedImage="shopping_bar" id="Yet-yo-92v"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MxW-8Z-bi3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XaV-vH-rgr" kind="relationship" relationship="rootViewController" id="GkC-S0-cub"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIX-Qb-zUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="1110"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="hhf-gl-ZLJ">
+            <objects>
+                <viewController id="XaV-vH-rgr" customClass="ShoppingBasicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ULE-WF-6YQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="qcz-3V-W7P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pYU-nI-MVf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="购物车" id="yBV-xc-hBR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8UJ-cN-zwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="1837"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="my_bar" width="25" height="23"/>
+        <image name="shopping_bar" width="21" height="23"/>
+    </resources>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShoppingCountTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3Q-Js-mdB">
+                        <rect key="frame" x="226" y="10" width="42" height="20"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Lzg-ih-GUb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYx-ew-GFM">
+                        <rect key="frame" x="184" y="10" width="42" height="20"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Ey2-Xl-eiq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOp-Az-aVH">
+                        <rect key="frame" x="268" y="10" width="42" height="20"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Yx9-Vu-xGD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FOp-Az-aVH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3HP-T4-x00"/>
+                    <constraint firstItem="FOp-Az-aVH" firstAttribute="leading" secondItem="I3Q-Js-mdB" secondAttribute="trailing" id="3ea-0k-epf"/>
+                    <constraint firstAttribute="trailing" secondItem="FOp-Az-aVH" secondAttribute="trailing" constant="10" id="Ewi-J0-o49"/>
+                    <constraint firstItem="MYx-ew-GFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Itg-02-lBd"/>
+                    <constraint firstItem="I3Q-Js-mdB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VPr-eg-Bfc"/>
+                    <constraint firstItem="I3Q-Js-mdB" firstAttribute="leading" secondItem="MYx-ew-GFM" secondAttribute="trailing" id="hIn-5z-biP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="movePayLabel" destination="FOp-Az-aVH" id="CoI-9A-t7B"/>
+                <outlet property="priceLabel" destination="I3Q-Js-mdB" id="x9i-hL-0tq"/>
+                <outlet property="shoppingCountLabel" destination="MYx-ew-GFM" id="eSb-pa-BWA"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="291"/>
+        </tableViewCell>
+    </objects>
+</document>

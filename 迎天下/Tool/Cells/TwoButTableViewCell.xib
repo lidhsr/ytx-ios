@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TwoButTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z8-6U-JGl">
+                        <rect key="frame" x="190" y="7" width="50" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Swx-we-aR6"/>
+                            <constraint firstAttribute="height" constant="30" id="lZk-8D-Thi"/>
+                        </constraints>
+                        <state key="normal" title="编辑">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haM-pG-taw">
+                        <rect key="frame" x="260" y="7" width="50" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1PE-Jw-SZL"/>
+                            <constraint firstAttribute="width" constant="50" id="MEf-zp-pw8"/>
+                        </constraints>
+                        <state key="normal" title="删除">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="haM-pG-taw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ats-Vt-Ei5"/>
+                    <constraint firstAttribute="trailing" secondItem="haM-pG-taw" secondAttribute="trailing" constant="10" id="Qlc-OT-9eU"/>
+                    <constraint firstItem="haM-pG-taw" firstAttribute="leading" secondItem="2z8-6U-JGl" secondAttribute="trailing" constant="20" id="pT9-Om-tBo"/>
+                    <constraint firstItem="2z8-6U-JGl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="s6F-pU-uKX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteBut" destination="haM-pG-taw" id="zez-ej-lYI"/>
+                <outlet property="editorBut" destination="2z8-6U-JGl" id="zh6-Da-paL"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
